@@ -30,9 +30,11 @@ pipeline {
             }
         }
         stage('Change directory') {
-            steps {
-                dir("/cygdrive/c/Users/valencias/Appdata/Local/Jenkins/.jenkins/workspace/fibonacci/fibonacci/scripts"){
-                    sh("fibonacci.sh ${env.NUMBER}")
+            echo("Change Directory place holder...")
+            // This does not work in Windows
+            //steps {
+            //    dir("/cygdrive/c/Users/valencias/Appdata/Local/Jenkins/.jenkins/workspace/fibonacci/fibonacci/scripts"){
+            //        sh("fibonacci.sh ${env.NUMBER}")
                 }
             }
         }
