@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                sh("./scripts/fibonacci.sh ${env.NUMBER}")
+                sh("/cygdrive/c/Users/valencias/Appdata/Local/Jenkins/.jenkins/workspace/fibonacci/fibonacci/scripts/fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Full path') {
