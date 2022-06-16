@@ -32,7 +32,7 @@ pipeline {
         stage('Change directory') {
             steps {
                 dir("/cygdrive/c/Users/valencias/Appdata/Local/Jenkins/.jenkins/workspace/fibonacci/fibonacci/scripts"){
-                    sh("./fibonacci.sh ${env.NUMBER}")
+                    sh("fibonacci.sh ${env.NUMBER}")
                 }
             }
         }
